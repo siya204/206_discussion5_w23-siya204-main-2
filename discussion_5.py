@@ -85,20 +85,20 @@ class TestAllMethods(unittest.TestCase):
 
 
 	## Check to see whether warehouse correctly returns the item with the most stock
-def test_warehouse_max_stock(self):
+	def test_warehouse_max_stock(self):
 		pass
 
 
 	# Check to see whether the warehouse correctly return the item with the highest price
-def test_warehouse_max_price(self):
-	pass
+	def test_warehouse_max_price(self):
+		pass
 		
-def test_count_a(self):
-    self.assertEqual(count_a(""       ), 0) # Empty string case
-    self.assertEqual(count_a("a"      ), 1) # Single character string case
-    self.assertEqual(count_a("aaaa"   ), 4) # String with only 'a' characters case
-    self.assertEqual(count_a("bababab"), 3) # String with 'a' interspersed with other characters
-	self.assertEqual(count_a("AaBbCc" ), 2) # String with mixed case characters
+	def test_count_a(self):
+    	self.assertEqual(count_a(""), 0) # Empty string case
+    	self.assertEqual(count_a("a"), 1) # Single character string case
+    	self.assertEqual(count_a("aaaa"), 4) # String with only 'a' characters case
+    	self.assertEqual(count_a("bababab"), 3) # String with 'a' interspersed with other characters
+		self.assertEqual(count_a("AaBbCc"), 2) # String with mixed case characters
 
 def main():
 	unittest.main(verbosity=2)
